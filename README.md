@@ -2,7 +2,7 @@
 
 1. Git clone this repo into your machine.
 
-(In case you've cloned before, run `git fetch`  & `git pull` before proceeding.
+(In case you've cloned before, run `git fetch`  & `git pull origin main` before proceeding.
 
 3. Copy the AAR file into the root folder of this repo (aar-repo)
 
