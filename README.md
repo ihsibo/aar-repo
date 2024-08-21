@@ -16,3 +16,21 @@
 6. Enter AAR file name that you've just copied into this folder.
 
 7. Voila! the script will generate pom file of this AAR and build it's structure and will push to git.
+
+----
+
+
+In app, add this repo to build.gradle (project-level)
+
+```
+allprojects {
+    repositories {
+      maven { url 'https://ihsibo.github.io/aar-repo/' }
+    ...
+    }
+  }
+```
+
+And build.gradle app level you keep the implementation as it was.
+example:
+`implementation 'com.andrognito.patternlockview:patternlockview:1.0.0'`
