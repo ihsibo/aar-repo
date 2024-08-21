@@ -2,9 +2,11 @@
 
 1. Git clone this repo into your machine.
 
-2. Copy the AAR file into the root folder of this repo (aar-repo)
+(In case you've cloned before, run `git fetch`  & `git pull` before proceeding.
 
-3. Run the script<br>
+3. Copy the AAR file into the root folder of this repo (aar-repo)
+
+4. Run the script<br>
 `chmod +x prepare_aar.sh`<br>
 `./prepare_aar.sh`
 
