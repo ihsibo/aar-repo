@@ -2,7 +2,7 @@
 
 # Prompt the user for input in the format groupId:artifactId:version
 read -p "Enter the Maven coordinates (groupId:artifactId:version): " maven_coords
-read -p "Enter the AAR file path: " aar_path
+read -p "Enter the AAR file name: " aar_path
 
 # Extract groupId, artifactId, and versionName using IFS (Internal Field Separator)
 IFS=':' read -r group_id artifact_id version_name <<< "$maven_coords"
