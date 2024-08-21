@@ -32,5 +32,5 @@ allprojects {
 ```
 
 And build.gradle app level you keep the implementation as it was.
-example:
+example:<br>
 `implementation 'com.andrognito.patternlockview:patternlockview:1.0.0'`
