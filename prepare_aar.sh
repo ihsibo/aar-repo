@@ -39,10 +39,18 @@ target_dir="$aar_dir/$group_path/$artifact_id/$version_name"
 mkdir -p "$target_dir"
 
 # Copy the AAR and POM file to the target directory
-cp "$aar_path" "$target_dir/${artifact_id}-${version_name}.aar"
+cp "$aar_path" "$target_dir/${$artifact_id-artifact_id}-${version_name}.aar"
 cp "$pom_file" "$target_dir/${artifact_id}-${version_name}.pom"
 
 rm $pom_file
+rm $aar_path
+
+
+git add .
+
+git commit -m "Add $artifact_id-$version_name"
+
+git push origin main
 
 # Confirm to the user
 #echo "AAR and POM files have been copied to: $target_dir"
