@@ -39,7 +39,8 @@ target_dir="$aar_dir/$group_path/$artifact_id/$version_name"
 mkdir -p "$target_dir"
 
 # Copy the AAR and POM file to the target directory
-cp "$aar_path" "$target_dir/${$artifact_id-artifact_id}-${version_name}.aar"
+#cp "$aar_path" "$target_dir/${$artifact_id-artifact_id}-${version_name}.aar"
+cp "$aar_path" "$target_dir/${artifact_id}-${version_name}.aar"
 cp "$pom_file" "$target_dir/${artifact_id}-${version_name}.pom"
 
 rm $pom_file
